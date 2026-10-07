@@ -1,0 +1,12 @@
+/* HitGoals — Corner radius tokens
+   Restrained, only-slightly-rounded corners (the brand wants crisp shapes,
+   not pillowy ones). Avatars/toggles that must be circular set 999 directly. */
+:root {
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 7px;    /* inputs, buttons, small cards */
+  --radius-lg: 10px;   /* cards */
+  --radius-xl: 14px;   /* hero cards, sheets */
+  --radius-2xl: 18px;
+  --radius-pill: 999px;/* circular controls only (avatars, switch, streak) */
+}

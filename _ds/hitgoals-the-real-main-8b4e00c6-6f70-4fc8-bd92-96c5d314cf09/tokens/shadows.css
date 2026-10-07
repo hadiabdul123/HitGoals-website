@@ -1,0 +1,21 @@
+/* HitGoals — Elevation & the signature "3D chunky" edges.
+   The brand look uses solid offset bottom edges (like the mascot's outline
+   and Duolingo-style chunky buttons) more than soft blurred shadows. */
+:root {
+  /* Soft ambient shadows (warm-tinted, low blur) */
+  --shadow-xs: 0 1px 2px rgba(42, 23, 18, 0.06);
+  --shadow-sm: 0 2px 6px rgba(42, 23, 18, 0.08);
+  --shadow-md: 0 6px 16px rgba(42, 23, 18, 0.10);
+  --shadow-lg: 0 14px 32px rgba(42, 23, 18, 0.14);
+  --shadow-pop: 0 18px 44px rgba(242, 59, 46, 0.22); /* red glow for CTAs/mascot */
+
+  /* Chunky solid bottom edges (the "press-down" toy look) */
+  --edge-brand:   0 4px 0 var(--red-700);
+  --edge-success: 0 4px 0 var(--green-600);
+  --edge-gold:    0 4px 0 var(--gold-600);
+  --edge-neutral: 0 4px 0 var(--cream-300);
+  --edge-ink:     0 3px 0 var(--ink-900);
+
+  /* Focus ring */
+  --ring: 0 0 0 4px var(--focus-tint);
+}

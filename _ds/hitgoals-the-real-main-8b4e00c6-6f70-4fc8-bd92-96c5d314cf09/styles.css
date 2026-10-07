@@ -1,0 +1,8 @@
+/* HitGoals Design System — global entry point.
+   Consumers link this one file. Import order: tokens only. */
+@import url('./tokens/colors.css');
+@import url('./tokens/typography.css');
+@import url('./tokens/spacing.css');
+@import url('./tokens/radius.css');
+@import url('./tokens/shadows.css');
+@import url('./tokens/motion.css');

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>HitGoals — Turn your goals into a plan you'll stick to.</title>
+<meta name="description" content="HitGoals learns your goals and routines, then plans your day around them. Talk it out with Arrow, get a plan that's actually yours, and keep moving even when life changes.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="HitGoals — Turn your goals into a plan you'll stick to.">
+<meta property="og:description" content="HitGoals learns your goals and routines, then plans your day around them.">
+<meta property="og:image" content="assets/mascot/proud.png">
+<meta name="theme-color" content="#FBF5EB">
+
+<link rel="icon" type="image/png" href="assets/mascot/wave.png">
+
+<!-- HitGoals design system tokens. These are exactly the six files that
+     _ds/hitgoals-the-real-main-8b4e00c6-6f70-4fc8-bd92-96c5d314cf09/styles.css @imports, in its order.
+     They are linked directly rather than through that entry point so the page
+     also works when opened straight from disk (browsers refuse to follow a
+     nested CSS @import over file://). -->
+<link rel="stylesheet" href="_ds/hitgoals-the-real-main-8b4e00c6-6f70-4fc8-bd92-96c5d314cf09/tokens/colors.css">
+<link rel="stylesheet" href="_ds/hitgoals-the-real-main-8b4e00c6-6f70-4fc8-bd92-96c5d314cf09/tokens/typography.css">
+<link rel="stylesheet" href="_ds/hitgoals-the-real-main-8b4e00c6-6f70-4fc8-bd92-96c5d314cf09/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/hitgoals-the-real-main-8b4e00c6-6f70-4fc8-bd92-96c5d314cf09/tokens/radius.css">
+<link rel="stylesheet" href="_ds/hitgoals-the-real-main-8b4e00c6-6f70-4fc8-bd92-96c5d314cf09/tokens/shadows.css">
+<link rel="stylesheet" href="_ds/hitgoals-the-real-main-8b4e00c6-6f70-4fc8-bd92-96c5d314cf09/tokens/motion.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!-- Icon sprite: the store badge glyphs are reused six times across the page. -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="i-apple" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zm3.632-3.297c.842-1.014 1.409-2.427 1.257-3.83-1.222.052-2.702.816-3.573 1.83-.78.9-1.464 2.336-1.284 3.702 1.33.104 2.69-.688 3.6-1.702z"/>
+  </symbol>
+  <symbol id="i-play" viewBox="0 0 24 24">
+    <path fill="#00d7fe" d="M3.609 1.814c-.24.24-.379.628-.379 1.126v18.12c0 .498.139.886.379 1.126L3.75 22.3 13.792 12 3.75 1.7l-.141.114z"/>
+    <path fill="#00f076" d="M13.792 12L3.75 1.7 3.61 1.814 13.75 12l-10.14 10.186.14.114L13.792 12z"/>
+    <path fill="#ffbc00" d="M17.09 8.618L13.792 12l3.3 3.382 4.108-2.38a1 1 0 0 0 0-1.73l-4.11-2.654z"/>
+    <path fill="#ff3131" d="M13.792 12l3.298-3.382-4.108-2.376L3.75 1.7 13.792 12z"/>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#top">
+      <span class="brand__word"><span class="brand__hit">Hit</span>Goals</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--sm btn--primary" href="#cta">Get the app</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================================ hero -- -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <div>
+        <h1 class="hero__title">
+          <span>Turn your goals into</span><br>
+          <span>a plan you'll stick to.</span>
+        </h1>
+        <p class="hero__sub">HitGoals learns your goals and routines, plans your day around them.</p>
+
+        <div class="store-row store-row--hero">
+          <a class="store-btn" href="#cta">
+            <svg width="24" height="24" aria-hidden="true"><use href="#i-apple"></use></svg>
+            <span class="store-btn__label">App Store</span>
+          </a>
+          <a class="store-btn" href="#cta">
+            <svg width="24" height="24" aria-hidden="true"><use href="#i-play"></use></svg>
+            <span class="store-btn__label">Google Play</span>
+          </a>
+        </div>
+
+        <p class="hero__note">Free · No credit card</p>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__glow" aria-hidden="true"></div>
+
+        <img class="hero__mascot" src="assets/mascot/hero-trim.png" alt="Arrow running toward your goals" width="656" height="649">
+
+        <!-- App preview -->
+        <div class="phone">
+          <div class="phone__status">
+            <span>9:41</span>
+            <span class="phone__status-icons">••▮ ▰</span>
+          </div>
+
+          <div class="phone__head">
+            <div class="phone__menu" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="phone__greeting">
+              <div class="phone__greeting-label">Good morning,</div>
+              <div class="phone__greeting-name">Abdul 👋</div>
+            </div>
+            <img class="phone__avatar" src="assets/mascot/wave.png" alt="" width="52" height="52">
+          </div>
+
+          <div class="phone__body">
+            <div class="chat">
+              <div class="chat__row">
+                <img class="chat__avatar" src="assets/mascot/wave.png" alt="" width="18" height="18">
+                <div class="chat__bubble">You're ahead of schedule 👀<br>Deep work finished <b>2 hours early.</b></div>
+              </div>
+
+              <div class="chat__bubble chat__bubble--user">nice, what now?</div>
+
+              <div class="chat__row">
+                <img class="chat__avatar" src="assets/mascot/wave.png" alt="" width="18" height="18">
+                <div class="chat__bubble">Let's use it. Gym → <b>1:00</b>, Spanish → <b>3:30</b>. Done by <b>5:10</b> 🔥</div>
+              </div>
+
+              <div class="chat__row">
+                <img class="chat__avatar" src="assets/mascot/wave.png" alt="" width="18" height="18">
+                <div class="chat__bubble">
+                  <p>Then you're done for the day.</p>
+                  <p>Kick back, order something good, watch Netflix.</p>
+                  <p><b>The evening's yours 😌</b></p>
+                </div>
+              </div>
+
+              <div class="chat__bubble chat__bubble--user chat__bubble--user-wide">Thanks Arrow, you the best</div>
+            </div>
+          </div>
+
+          <div class="phone__tabs" aria-hidden="true">
+            <div class="phone__tab">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path></svg>
+              <span>Today</span>
+            </div>
+            <div class="phone__tab">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a6 6 0 1 1-12 0c0-1.67.7-3.16 1.5-4.5C8.5 12.5 8 14 8.5 14.5z"></path></svg>
+              <span>Habits</span>
+            </div>
+            <div class="phone__tab">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1"></circle></svg>
+              <span>Goals</span>
+            </div>
+            <div class="phone__tab">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"></rect><path d="M3 9.5h18M8 2.5v4M16 2.5v4"></path></svg>
+              <span>Plan</span>
+            </div>
+            <div class="phone__tab phone__tab--active">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-1.1 4.2 8.5 8.5 0 0 1-7.4 4.3 8.4 8.4 0 0 1-4.2-1.1L3 20l1.1-5.3A8.4 8.4 0 0 1 3 10.5a8.5 8.5 0 0 1 4.3-7.4 8.4 8.4 0 0 1 4.2-1.1h.5A8.48 8.48 0 0 1 20 9.4v.5z"></path></svg>
+              <span>Arrow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= problem -- -->
+  <section class="section">
+    <div class="section__inner">
+      <div class="section__head">
+        <div class="eyebrow">The honest problem</div>
+        <h2 class="section__title">You don't need motivation.<br>You need a plan you'll stick to.</h2>
+      </div>
+
+      <div class="compare">
+        <div class="compare__col compare__col--without">
+          <div class="compare__label compare__label--without">Without HitGoals</div>
+          <ul class="compare__list">
+            <li class="compare__item">
+              <span class="compare__mark compare__mark--without" aria-hidden="true">❌</span>
+              <span class="compare__text compare__text--without">You reopen the same to-do list every morning</span>
+            </li>
+            <li class="compare__item">
+              <span class="compare__mark compare__mark--without" aria-hidden="true">❌</span>
+              <span class="compare__text compare__text--without">"I'll start Monday" turns into three months</span>
+            </li>
+            <li class="compare__item">
+              <span class="compare__mark compare__mark--without" aria-hidden="true">❌</span>
+              <span class="compare__text compare__text--without">Miss one day, and the whole week falls apart</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="compare__col">
+          <div class="compare__label compare__label--with">With HitGoals</div>
+          <ul class="compare__list">
+            <li class="compare__item">
+              <span class="compare__mark compare__mark--with" aria-hidden="true">✓</span>
+              <span class="compare__text compare__text--with">You know exactly what to do next</span>
+            </li>
+            <li class="compare__item">
+              <span class="compare__mark compare__mark--with" aria-hidden="true">✓</span>
+              <span class="compare__text compare__text--with">Every day moves you a little closer</span>
+            </li>
+            <li class="compare__item">
+              <span class="compare__mark compare__mark--with" aria-hidden="true">✓</span>
+              <span class="compare__text compare__text--with">Miss a day? Your plan adjusts and keeps you moving</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="store-row store-row--center">
+        <a class="store-btn store-btn--compact" href="#top">
+          <svg width="22" height="22" aria-hidden="true"><use href="#i-apple"></use></svg>
+          <span class="store-btn__label">App Store</span>
+        </a>
+        <a class="store-btn store-btn--compact" href="#top">
+          <svg width="22" height="22" aria-hidden="true"><use href="#i-play"></use></svg>
+          <span class="store-btn__label">Google Play</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================== how it works -- -->
+  <section class="section how" id="how">
+    <div class="how__inner">
+      <div class="how__heading">
+        <h2 class="how__title">Make every day move you forward.</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <div>
+            <h3 class="step__title">Talk it out with Arrow.</h3>
+            <p class="step__text">Tell Arrow what you're chasing and what your life actually looks like, just a conversation.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div>
+            <h3 class="step__title">Get a plan that's actually yours.</h3>
+            <p class="step__text">Arrow turns your goals into clear daily steps, built around your actual life, not some generic routine.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div>
+            <h3 class="step__title">Keep moving, even when life changes.</h3>
+            <p class="step__text">Do what you can today. If plans change, Arrow adjusts what's next so you don't lose momentum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= faq -- -->
+  <section class="section--tight faq" id="faq">
+    <div class="faq__inner">
+      <div class="faq__head">
+        <img class="faq__mascot" src="assets/mascot/confused.png" alt="" width="99" height="99">
+        <h2 class="faq__title">Fair questions.</h2>
+      </div>
+
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary class="faq__q">Is this just another to-do list?<span class="faq__toggle" aria-hidden="true">+</span></summary>
+          <p class="faq__a">No. A to-do list just hands you a pile. HitGoals decides when each thing happens based on your actual week, and moves things around the moment that week changes.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Do I have to plan everything myself?<span class="faq__toggle" aria-hidden="true">+</span></summary>
+          <p class="faq__a">Nope. Tell Arrow what you want to achieve and what your life looks like. It helps turn that into a plan you can actually follow.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">What if my schedule suddenly changes?<span class="faq__toggle" aria-hidden="true">+</span></summary>
+          <p class="faq__a">Your plan can change with it. Tell Arrow what happened, and it automatically moves things around.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Can I work on more than one goal at once?<span class="faq__toggle" aria-hidden="true">+</span></summary>
+          <p class="faq__a">Yes. HitGoals helps balance your goals with everything else you already have going on.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">What if I don't even know where to start?<span class="faq__toggle" aria-hidden="true">+</span></summary>
+          <p class="faq__a">That's kind of the point. Talk it through with Arrow, and it helps figure out what your next steps should be.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= cta -- -->
+  <section class="section--tight cta" id="cta">
+    <div class="cta__card">
+      <div class="cta__sheen" aria-hidden="true"></div>
+      <div class="cta__grid">
+        <div class="cta__copy">
+          <h2 class="cta__title">Make the goal.<br>Hit the goal.</h2>
+          <div class="store-row">
+            <a class="store-btn store-btn--light" href="#top">
+              <svg width="24" height="24" aria-hidden="true"><use href="#i-apple"></use></svg>
+              <span class="store-btn__label">App Store</span>
+            </a>
+            <a class="store-btn store-btn--light" href="#top">
+              <svg width="24" height="24" aria-hidden="true"><use href="#i-play"></use></svg>
+              <span class="store-btn__label">Google Play</span>
+            </a>
+          </div>
+        </div>
+        <div class="cta__visual">
+          <img class="cta__mascot" src="assets/mascot/proud.png" alt="Arrow celebrating" width="800" height="800">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <img class="site-footer__mark" src="assets/mascot/wave.png" alt="" width="38" height="38">
+      <span class="site-footer__word"><span class="brand__hit">Hit</span>Goals</span>
+    </div>
+    <div class="site-footer__links">
+      <a class="link-btn" href="mailto:support@hitgoals.app">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h13A2.5 2.5 0 0 1 21 7.5v9A2.5 2.5 0 0 1 18.5 19h-13A2.5 2.5 0 0 1 3 16.5z"></path><path d="m3.6 6.7 8.4 6 8.4-6"></path></svg>
+        Support
+      </a>
+      <a class="link-btn" href="https://instagram.com/hitgoals" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+        Instagram
+      </a>
+      <a class="link-btn" href="https://tiktok.com/@hitgoals" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 3v10.8a3.7 3.7 0 1 1-3.7-3.7c.4 0 .8.06 1.2.18"></path><path d="M14.5 3c.3 2.4 2 4.1 4.4 4.4"></path></svg>
+        TikTok
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
