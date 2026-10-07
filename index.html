@@ -320,10 +320,13 @@
       <span class="site-footer__word"><span class="brand__hit">Hit</span>Goals</span>
     </div>
     <div class="site-footer__links">
-      <a class="link-btn" href="mailto:support@hitgoals.app">
+      <details class="support-contact">
+      <summary class="link-btn">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h13A2.5 2.5 0 0 1 21 7.5v9A2.5 2.5 0 0 1 18.5 19h-13A2.5 2.5 0 0 1 3 16.5z"></path><path d="m3.6 6.7 8.4 6 8.4-6"></path></svg>
         Support
-      </a>
+      </summary>
+      <a class="support-contact__email" href="mailto:hitgoals123@gmail.com">hitgoals123@gmail.com</a>
+      </details>
       <a class="link-btn" href="https://instagram.com/hitgoals" target="_blank" rel="noopener">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
         Instagram
@@ -336,5 +339,15 @@
   </div>
 </footer>
 
+<script>
+document.querySelectorAll('.store-btn').forEach(function (button) {
+  var label = button.querySelector('.store-btn__label');
+  label.setAttribute('aria-live', 'polite');
+  button.addEventListener('click', function (event) {
+    event.preventDefault();
+    label.textContent = 'Coming soon';
+  });
+});
+</script>
 </body>
 </html>

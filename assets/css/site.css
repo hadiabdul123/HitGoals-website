@@ -504,6 +504,11 @@ a:hover { color: var(--red-500); }
 .link-btn:hover { color: var(--ink-900); background: var(--cream-50); }
 .link-btn:active { transform: translateY(3px); box-shadow: 0 0 0 var(--cream-300); }
 
+.support-contact { align-self: flex-start; }
+.support-contact summary { cursor: pointer; list-style: none; }
+.support-contact summary::-webkit-details-marker { display: none; }
+.support-contact__email { display: block; margin-top: 10px; font-size: 14px; }
+
 /* --------------------------------------------------------- responsive --- */
 @media (max-width: 900px) {
   .compare__col--without { border-right: 0; border-bottom: 1.5px solid var(--border-subtle); }
