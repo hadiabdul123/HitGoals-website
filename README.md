@@ -27,6 +27,8 @@ python -m http.server 8000
 ```
 index.html                 The whole page: header, hero, problem, how it works,
                            FAQ, CTA, footer.
+privacy/index.html         Privacy Policy, served at /privacy/.
+terms/index.html           Terms of Service, served at /terms/.
 assets/css/site.css        All page styling. Every value resolves to a design
                            system token.
 assets/mascot/*.png        Arrow mascot poses used by the page.
